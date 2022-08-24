@@ -44,11 +44,11 @@ const PostAppointment = async (req, res) =>{
 const UpdateAppointment = async (req, res) =>{
     try {
         const appointmentId = parseInt(req.params.id)
-        const update = await Appointment.update(req.body, {
+        const updateAppt = await Appointment.update(req.body, {
             where: {id: appointmentId},
             // returning: true
         })
-        res.send(update, {message: `Appointment ${appointmentId} has been updated.`})
+        res.send(updateAppt)
         console.log(UpdateAppointment)
     } catch (error) {
         throw(error)
