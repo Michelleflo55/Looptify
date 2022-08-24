@@ -20,12 +20,10 @@ module.exports = {
       pet: {
         type: Sequelize.STRING
       },
-      apptDate: {
+      apptDateTime: {
         type: Sequelize.STRING
       },
-      apptTime: {
-        type: Sequelize.INTEGER
-      },
+    
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

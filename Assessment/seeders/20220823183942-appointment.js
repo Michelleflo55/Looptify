@@ -8,8 +8,7 @@ module.exports = {
       phone: falso.randPhoneNumber(),
       email: falso.randEmail(),
       pet: falso.randFirstName(),
-      apptDate: falso.randSoonDate(),
-      apptTime: falso.randNumber({min: 1, max:12}),
+      apptDateTime: falso.randSoonDate(),
       createdAt: new Date(),
       updatedAt: new Date()
     }))
