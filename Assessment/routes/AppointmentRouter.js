@@ -3,7 +3,7 @@ const controller = require('../controllers/AppointmentController')
 
 Router.get('/', controller.GetAppointments)
 Router.get('/:id', controller.GetAppointment)
-// Router.post('/newAppointment', controller.PostAppointment)
+Router.post('/', controller.PostAppointment)
 Router.put('/:id,', controller.UpdateAppointment)
 Router.delete('/:id', controller.DeleteAppointment)
 
