@@ -46,9 +46,9 @@ const UpdateAppointment = async (req, res) =>{
         const appointmentId = parseInt(req.params.id)
         const update = await Appointment.update(req.body, {
             where: {id: appointmentId},
-            returning: true
+            // returning: true
         })
-        res.send(update)
+        res.send(update, {message: `Appointment ${appointmentId} has been updated.`})
         console.log(UpdateAppointment)
     } catch (error) {
         throw(error)
